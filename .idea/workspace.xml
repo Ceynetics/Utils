@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ac22b6c-aa98-497b-86e5-cb83c28d26ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/todo/todo/src/main/java/com/ceynetics/todo/config/WebClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_authentication/src/main/java/com/ceynetics/user_authentication/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_authentication/src/main/java/com/ceynetics/user_authentication/config/application-secrets.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_authentication/src/main/java/com/ceynetics/user_authentication/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/controller/todo.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/controller/user.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Todo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/authSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo/todo/src/main/java/com/ceynetics/todo/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_authentication/src/main/java/com/ceynetics/user_authentication/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/todo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/todo/todo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo/todo/src/main/java/com/ceynetics/todo/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/todo/todo/src/main/java/com/ceynetics/todo/controller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/todo/src/main/java/com/ceynetics/todo/service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/todo/todo/src/main/java/com/ceynetics/todo/service/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_authentication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user_authentication/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_authentication/src/main/java/com/ceynetics/user_authentication/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_authentication/src/main/java/com/ceynetics/user_authentication/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_authentication/src/main/java/com/ceynetics/user_authentication/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_authentication/src/main/java/com/ceynetics/user_authentication/dto/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_authentication/src/main/java/com/ceynetics/user_authentication/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_authentication/src/main/java/com/ceynetics/user_authentication/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_authentication/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user_authentication/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JSX File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -35,9 +37,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2m0WCEFtkkArnKOCF168TM2eKcE" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,6 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.TodoApplication.executor": "Run",
     "Spring Boot.UserAuthenticationApplication.executor": "Run",
+    "data.sources.detected.do.not.suggest.again": "true",
     "git-widget-placeholder": "branch__ashan",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -64,10 +67,20 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\softwares\\IntelliJ IDEA 2024.2.0.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.UserAuthenticationApplication">
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.TodoApplication">
     <configuration name="TodoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="todo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ceynetics.todo.TodoApplication" />
@@ -99,7 +112,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726213845241</updated>
-      <workItem from="1726213846261" duration="5670000" />
+      <workItem from="1726213846261" duration="6344000" />
+      <workItem from="1726220218927" duration="12934000" />
     </task>
     <servers />
   </component>
