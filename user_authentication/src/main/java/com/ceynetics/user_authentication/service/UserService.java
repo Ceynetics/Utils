@@ -3,9 +3,11 @@ package com.ceynetics.user_authentication.service;
 import com.ceynetics.user_authentication.dto.LoginRequest;
 import com.ceynetics.user_authentication.dto.UserRequest;
 import com.ceynetics.user_authentication.dto.UserResponse;
+import com.ceynetics.user_authentication.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import com.ceynetics.user_authentication.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ceynetics.user_authentication.repository.UserRepository;
 
@@ -15,6 +17,9 @@ import com.ceynetics.user_authentication.repository.UserRepository;
 public class UserService {
 
     private final UserRepository userRepository;
+
+    @Autowired
+    private JwtUtil jwtUtil;
 
     public void registerUser(UserRequest userRequest) {
         // Register a new user
@@ -42,10 +47,13 @@ public class UserService {
             return null;
         }
 
+        String token = jwtUtil.generateToken(user.getUsername());
+
         log.info("User:{} logged in successfully", user.getUsername());
         return UserResponse.builder()
                 .username(user.getUsername())
                 .email(user.getEmail())
+                .token(token)
                 .build();
     }
 }

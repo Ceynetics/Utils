@@ -31,10 +31,6 @@ public class UserController {
         return userService.loginUser(loginRequest);
     }
 
-    @GetMapping("/test")
-    public ResponseEntity<String> testEndpoint() {
-        return ResponseEntity.ok("Controller is working!");
-    }
 
 }
 

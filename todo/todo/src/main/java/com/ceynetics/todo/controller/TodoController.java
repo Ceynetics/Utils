@@ -39,7 +39,6 @@ public class TodoController {
         return todoService.getAllTodos();
     }
 
-
     @PostMapping("/get/{id}")
     public TodoResponse getTodoById(@PathVariable String id){
         return todoService.getTodoById(id);

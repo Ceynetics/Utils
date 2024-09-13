@@ -7,6 +7,7 @@ import com.ceynetics.todo.repository.TodoRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +18,11 @@ import java.util.List;
 public class TodoService {
 
     private final TodoRepository todoRepository;
+    private final WebClient webClient;
 
     public void addTodo(TodoRequest todoRequest) {
 
+        //call user service to get user details
         Todo todo = Todo.builder()
                 .title(todoRequest.getTitle())
                 .description(todoRequest.getDescription())
