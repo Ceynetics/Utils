@@ -4,6 +4,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/todo/todo/pom.xml" />
         <option value="$PROJECT_DIR$/user_authentication/pom.xml" />
       </list>
     </option>
